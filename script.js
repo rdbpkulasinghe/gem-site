@@ -1,23 +1,23 @@
 const gems = [
   {
     id: 1,
-    name: "Ruby",
+    name: "Burmese Ruby",
     type: "ruby",
     color: "Pigeon Blood Red",
     image: "images/IMG_2126.png",
   },
   {
     id: 2,
-    name: "Blue Sapphire",
+    name: "Ceylon Sapphire",
     type: "sapphire",
     color: "Royal Blue",
     image: "images/IMG_2128.png",
   },
   {
     id: 3,
-    name: "Yellow Sapphire",
-    type: "sapphire",
-    color: "Soft yellow",
+    name: "Colombian Emerald",
+    type: "emerald",
+    color: "Deep Green",
     image: "images/IMG_2131.png",
   },
   {
@@ -76,9 +76,7 @@ function displayFeaturedGems() {
                 </div>
                 <div class="gem-info">
                     <h3 class="gem-name">${gem.name}</h3>
-                   
                     <div class="gem-specs">
-                        
                         <span>Color: ${gem.color}</span>
                     </div>
                 </div>
@@ -103,10 +101,17 @@ function displayAllGems(filter = "all") {
                         <div class="gem-specs">
                             <span>Color: ${gem.color}</span>
                         </div>
+                        <a href="https://wa.me/PHONE_NUMBER?text=Hi,%20I'm%20interested%20in%20your%20${encodeURIComponent(
+                          gem.name
+                        )}%20(${gem.carat}ct,%20${gem.color})" 
+                           class="btn whatsapp-btn" 
+                           target="_blank">
+                           <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
+                        </a>
                     </div>
                 </div>
-            `;
-    }
+         `;
+        }
   });
 }
 
