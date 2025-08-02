@@ -102,9 +102,9 @@ function displayAllGems(filter = "all") {
                         <div class="gem-specs">
                             <span>Color: ${gem.color}</span>
                         </div>
-                        <a href="https://wa.me/PHONE_NUMBER?text=Hi,%20I'm%20interested%20in%20your%20${encodeURIComponent(
+                        <a href="https://wa.me/94778101999?text=Hi,%20I'm%20interested%20in%20your%20${encodeURIComponent(
                           gem.name
-                        )}%20(${gem.carat}ct,%20${gem.color})" 
+                        )}%20${gem.color})" 
                            class="btn whatsapp-btn" 
                            target="_blank">
                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
